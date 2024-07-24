@@ -31,6 +31,17 @@ body {
     background: #db6a00;
     color: #ffffff;
 }
+.btn-contact {
+    border: 2px solid #db6a00;
+    background: transparent;
+    color: #db6a00;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 10px;
+}
+.btn-contact:hover {
+    background: #db6a00;
+    color: #ffffff;
+}
 
 #hero {
     padding: 5rem 0;
