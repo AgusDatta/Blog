@@ -1,0 +1,231 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #3a3a3a, #242424);
+    color: #d8d8d8;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    color: #d8d8d8;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 10px;
+    margin-right: 10px; /* Añade margen entre los elementos */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.navbar-nav .nav-item .btn-contact {
+    border: 2px solid #db6a00;
+    background: transparent;
+    color: #db6a00;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 10px;
+}
+
+.navbar-nav .nav-item .btn-contact:hover {
+    background: #db6a00;
+    color: #ffffff;
+}
+
+#hero {
+    padding: 5rem 0;
+    height: 100vh;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn-download {
+    background: #db6a00;
+    color: #ffffff;
+    border: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-download:hover {
+    background: #db6a00;
+    color: #242424;
+}
+
+.btn-contratame {
+    border: 2px solid #db6a00;
+    color: #db6a00;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 10px;
+}
+
+.btn-contratame:hover {
+    background: #db6a00;
+    color: #ffffff;
+    border: 2px solid #db6a00; /* Mantiene el borde del mismo color que el fondo */
+}
+
+.hero-image img {
+    border-radius: 50%;
+    width: 50vw;
+    height: 50vw;
+    max-width: 500px;
+    max-height: 500px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    opacity: 0;
+    animation: fadeInDown 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#typed-text::after {
+    content: '|';
+    display: inline-block;
+    animation: blink 0.8s infinite;
+    color: #d8d8d8;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.title-container h2 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.underline .line {
+    height: 4px;
+    width: 150px;
+    background-color: #db6a00;
+    margin: 20px;
+    border-radius: 3px;
+}
+
+.underline .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #db6a00;
+    border-radius: 50%;
+}
+
+#h3años{
+    color: #db6a00;
+}
+
+.about-text {
+    margin-bottom: 1rem;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto; /* Esta línea centra el contenedor */
+}
+
+/* Animaciones flotantes independientes */
+.honeycomb-item {
+    position: relative;
+    animation: float 3s ease-in-out infinite;
+}
+
+.honeycomb-item:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.honeycomb-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.honeycomb-item:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.honeycomb-item:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.honeycomb-item:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.honeycomb-item:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.honeycomb-item:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+}
+
+#imaginar{
+    color: #db6a00;
+}
+#programar{
+    color: #db6a00;
+}
+.experience-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.experience-card i {
+    color: #db6a00;
+}
+
+.experience-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.experience-card p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-link {
+    color: #d8d8d8;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+    padding: 0.25rem 0.5rem;
+    border-radius: 10px;
+}
+
+.footer-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
