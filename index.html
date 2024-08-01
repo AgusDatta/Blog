@@ -22,7 +22,6 @@
                         <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#experience">Experiencia</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">Sobre Mí</a></li>
-                        <li class="nav-item"><a class="nav-link btn-contact" href="mailto:agustindattilio@gmail.com">Contáctame</a></li>
                     </ul>
                 </div>
             </nav>
@@ -32,12 +31,13 @@
     <section id="hero" class="d-flex align-items-center">
         <div class="container text-center text-md-start d-flex flex-column flex-md-row align-items-center">
             <div class="hero-content me-md-5">
-                <h2>Hola, mi nombre es</h2>
+                <h2>Hola! mi nombre es</h2>
                 <h1 id="typed-text">Agustin Dattilio</h1>
-                <p>Soy Desarrollador de Software, todo lo que puedas <span id="imaginar">imaginar</span>, lo podrás <span id="programar">programar</span></p>
+                <p>Soy Desarrollador de Software, todo lo que puedas <span id="colored">imaginar</span>, lo podrás <span id="colored">programar</span>.</p>
                 <div class="buttons">
-                    <a href="files/Curriculum-Vitae-2024-Agustin-Dattilio.pdf" download="CV_Agustin_Dattilio.pdf" class="btn btn-primary btn-lg btn-download">Descargar CV</a>
-                    <a href="https://www.linkedin.com/in/agustin-dattilio-01577b194/" class="btn btn-outline-light btn-lg btn-contratame">Mi linkedin</a>
+                    <a href="files/Curriculum-Vitae-2024-Agustin-Dattilio.pdf" download="CV_Agustin_Dattilio.pdf" class="btn btn-primary btn-lg btn-download m-2">Descargar CV</a>
+                    <a href="https://www.linkedin.com/in/agustin-dattilio-01577b194/" class="btn btn-primary btn-lg btn-download m-2"><svg width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" /><path d="M8 11l0 5" /><path d="M8 8l0 .01" /><path d="M12 16l0 -5" /><path d="M16 16v-3a2 2 0 0 0 -4 0" /></svg></a>
+                    <a href="https://github.com/AgusDatta" class="btn btn-primary btn-lg btn-download m-2"><svg width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg></a>
                 </div>
             </div>
             <div class="hero-image mt-4 mt-md-0">
@@ -85,14 +85,18 @@
                     <img src="files/Python.png" class="img-fluid" alt="Python">
                     <h3>Python</h3>
                 </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4 honeycomb-item">
+                    <img src="files/Astro.png" class="img-fluid" alt="Astro">
+                    <h3>Astro</h3>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="py-5 text-center bg-dark text-light">
+    <section id="projects" class="py-5 bg-dark text-light">
         <div class="container">
             <div class="title-container">
-                <h2>Proyectos</h2>
+                <h2 class="text-center">Proyectos</h2>
                 <div class="underline d-flex justify-content-center align-items-center">
                     <span class="line"></span>
                     <span class="dot"></span>
@@ -101,11 +105,11 @@
             </div>
             <div class="row mt-4 justify-content-center">
                 <div class="col-md-8 mb-4">
-                    <div class="project-card p-4 bg-secondary rounded shadow-sm">
+                    <div class="project-card p-4 bg-secondary rounded shadow-sm text-pretty">
                         <img src="files/SpaceX-Launches.png" class="img-fluid rounded mb-3" alt="Project Screenshot">
-                        <h3>SpaceX-Launches</h3>
-                        <p>Este proyecto es una página web dedicada a los lanzamientos de SpaceX, diseñada utilizando Astro y Tailwind CSS. La web se conecta a la API de SpaceX para extraer información detallada sobre cada lanzamiento. Los usuarios pueden ver información sobre el número de lanzamiento, si fue exitoso o fallido, y una descripción detallada de cada evento. Este proyecto fue desarrollado como una incursión en las tecnologías de Astro y Tailwind.</p>
-                        <a href="https://astrospacex-launches.netlify.app/" class="btn btn-primary" target="_blank">Ver Proyecto</a>
+                        <h3><span id="colored">SpaceX-Launches</span></h3>
+                        <p>Este proyecto es una página web dedicada a los lanzamientos de SpaceX. <br>La web se conecta a la API de SpaceX para extraer información detallada sobre cada lanzamiento. <br>Los usuarios pueden ver información sobre el número del lanzamiento, si fue exitoso o fallido, y una descripción detallada de cada evento. <br>Este proyecto fue desarrollado como una incursión en las tecnologías de Astro y Tailwind, guiado por "Midudev".</p>
+                        <a href="https://astrospacex-launches.netlify.app/" class="btn btn-primary" target="_blank">Visitar Web</a>
                     </div>
                 </div>
             </div>
@@ -114,13 +118,20 @@
 
     <section id="experience" class="py-5 bg-dark text-light">
         <div class="container">
-            <h2 class="title-container text-center">Experience</h2>
+            <div class="title-container">
+                <h2 class="title-container text-center">Experience</h2>
+                <div class="underline d-flex justify-content-center align-items-center">
+                    <span class="line"></span>
+                    <span class="dot"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
             <div class="experience-container mt-4 row">
                 <div class="col-md-6 mb-4">
                     <div class="experience-card p-4 bg-secondary rounded shadow-sm">
                         <div class="d-flex align-items-center mb-3">
                             <i class="fas fa-user-tie fa-2x me-3"></i>
-                            <h3 class="m-0">Analista de tecnologías de usuarios</h3>
+                            <h3 class="m-0"><span id="nocolored">Analista de tecnologías de usuarios.</span></h3>
                         </div>
                         <p class="text-muted mb-2">Prisma Medios de Pago, Marzo 2023 - Mayo 2024</p>
                         <p>Ofrecí Soporte de IT a los usuarios de Prisma Medios de Pago de manera online y física, resolviendo inconvenientes tanto de software como de hardware a través de un sistema de tickets.</p>
@@ -130,10 +141,10 @@
                     <div class="experience-card p-4 bg-secondary rounded shadow-sm">
                         <div class="d-flex align-items-center mb-3">
                             <i class="fas fa-clipboard-list fa-2x me-3"></i>
-                            <h3 class="m-0">Analista de operaciones</h3>
+                            <h3 class="m-0"><span id="nocolored">Analista de operaciones.</span></h3>
                         </div>
                         <p class="text-muted mb-2">SIA Interactive, Mayo 2024 - Actualidad</p>
-                        <p>Encargado de la carga eficiente y precisa de templates en las pantallas de los locales gastronómicos de McDonald's a través de la aplicación DexManager. Esto implica la actualización regular de los contenidos visuales y promocionales en todas las pantallas, asegurando una experiencia consistente para los clientes.</p>
+                        <p>Como Analista de operaciones, algunas de mis tareas más recurrentes son la administración y configuración de pantallas por medio de DexManager. <br><br>Al ser uno de los encargados del mercado de McDonald’s LATAM, mi responsabilidad se basa en la coordinación con el área de marketing para poder desplegar campañas masivas a todos los locales mientras se lleva un manejo de control de errores.</p>
                     </div>
                 </div>
             </div>
@@ -150,15 +161,15 @@
                     <span class="line"></span>
                 </div>
             </div>
-            <div class="about-content text-center mt-4">
-                <div class="about-text">
-                    <h4><span id="h3años">+1 Año</span> de experiencia como programador.</h4>
-                    <p>Mi enfoque proactivo y habilidades resolutivas me han permitido sobresalir en la resolución de problemas y la innovación en el entorno de la tecnología.</p>
+            <div class="about-content mt-4">
+                <div class="about-text text-pretty">
+                    <h5><span id="colored">+1Año</span> de experiencia como programador.</h5>
                     <p>Actualmente, me encuentro estudiando la Tecnicatura en Desarrollo de Software.</p>
-                    <p>Mi objetivo profesional es seguir creciendo dentro del apasionante mundo del desarrollo web, donde puedo combinar mis conocimientos técnicos con mi pasión por la tecnología.</p>
-                    <p>Estoy ansioso por seguir aprendiendo y creciendo en mi carrera.</p>
+                    <p>Mi enfoque proactivo y habilidades resolutivas me han permitido sobresalir en la resolución de problemas y la innovación en el entorno de la tecnología.</p>
+                    <p>Lleve a cabo un proyecto de innovación tecnológica para una empresa multinacional. <br>Este proyecto se basaba en un Bot de WhatsApp como herramienta para todos los usuarios que trabajaban allí.</p>
+                    <p>Como un apasionado por las tecnologías me dedico diariamente a aprender y practicar nuevas herramientas que me permitan crecer en el ambiente.</p>
                 </div>
-                <div class="about-button mt-4">
+                <div class="about-button mt-4 text-center">
                     <a href="mailto:agustindatilio@gmail.com" class="btn btn-contact btn-lg">Contáctame</a>
                 </div>                
             </div>
