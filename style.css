@@ -27,6 +27,21 @@ body {
     border-radius: 10px;
 }
 
+.btn-codigo{
+    font-weight: 500;
+    background-color: transparent;
+    border: 2px solid #db6a00;
+    color: #db6a00;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-codigo:hover {
+    font-weight: 500;
+    border: 2px solid #db6a00;
+    background-color: #db6a00;
+    color: black;
+}
+
 .navbar-nav .nav-item .btn-contact:hover {
     background: #db6a00;
     color: #ffffff;
@@ -254,16 +269,19 @@ body {
     border-radius: 5px;
 }
 
-#projects .btn-primary {
+.btn-primary {
+    font-weight: 500;
     background-color: #db6a00;
-    border: none;
+    border: 2px solid #db6a00;
     color: #ffffff;
     transition: background 0.3s, color 0.3s;
 }
 
-#projects .btn-primary:hover {
-    background-color: #e07b00;
-    color: #ffffff;
+.btn-primary:hover {
+    font-weight: 500;
+    border: 2px solid #db6a00;
+    background-color: #db6a00;
+    color: black;
 }
 
 #projects .title-container h2 {
