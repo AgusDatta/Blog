@@ -196,6 +196,10 @@ body {
     animation-delay: 1.2s;
 }
 
+.honeycomb-item:nth-child(8) {
+    animation-delay: 1.4s;
+}
+
 @keyframes float {
     0%, 100% {
         transform: translateY(0);
