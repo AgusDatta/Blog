@@ -1,14 +1,19 @@
 document.addEventListener('DOMContentLoaded', function () {
     const navToggle = document.querySelector('.navbar-toggler');
+    const navCollapse = document.querySelector('.navbar-collapse');
     const navLinks = document.querySelectorAll('.nav-link');
 
     navToggle.addEventListener('click', function () {
-        document.querySelector('.navbar-collapse').classList.toggle('show');
+        if (navCollapse.classList.contains('show')) {
+            navCollapse.classList.remove('show');
+        } else {
+            navCollapse.classList.add('show');
+        }
     });
 
     navLinks.forEach(link => {
         link.addEventListener('click', function () {
-            document.querySelector('.navbar-collapse').classList.remove('show');
+            navCollapse.classList.remove('show');
         });
     });
 });

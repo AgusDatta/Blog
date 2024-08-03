@@ -308,4 +308,11 @@ body {
     border-radius: 50%;
 }
 
+.navbar-collapse {
+    display: none;
+}
+
+.navbar-collapse.show {
+    display: block;
+}
 
