@@ -132,7 +132,7 @@ body {
 }
 
 .title-container h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 0.5rem;
 }
 
@@ -263,33 +263,55 @@ body {
 }
 
 #projects .project-card {
+    max-width: 100%; /* Asegura que las tarjetas no excedan el ancho permitido */
+    word-wrap: break-word; /* Permite dividir palabras largas */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 600px;
+    max-height: 650px;
 }
 
+/* Estilo del título dentro de la tarjeta */
+#projects .project-card h3 {
+    font-size: 1.5rem; /* Ajustar el tamaño del título para pantallas más pequeñas */
+    text-align: center; /* Centrar el título */
+    word-wrap: break-word; /* Divide palabras largas para evitar que desborden */
+    margin-bottom: 1rem; /* Agrega espacio entre el título y el botón */
+}
 
 #projects .project-card img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 5px;
 }
 
+/* Botón Naranja - Estilo Base */
 .btn-primary {
     font-weight: 500;
     background-color: #db6a00;
-    border: 2px solid #db6a00;
+    border: none;
     color: #ffffff;
-    transition: background 0.3s, color 0.3s;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
 }
 
+/* Efecto Hover */
 .btn-primary:hover {
-    font-weight: 500;
-    border: 2px solid #db6a00;
+    background-color: #a34f00;
+    color: #ffffff;
+    transform: scale(1.05); /* Pequeño zoom al pasar el cursor */
+    border: none;
+}
+
+/* Remover color azul al hacer clic */
+.btn-primary:focus, .btn-primary:active {
     background-color: #db6a00;
-    color: black;
+    color: #ffffff;
+    border-color: #db6a00;
+    box-shadow: 0 0 0 0.2rem rgba(219, 106, 0, 0.25); /* Resalta ligeramente */
+    outline: none; /* Remueve el borde azul predeterminado */
 }
 
 #projects .title-container h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 0.5rem;
 }
 
@@ -316,3 +338,24 @@ body {
     display: block;
 }
 
+/* Para pantallas medianas */
+@media (max-width: 992px) {
+    #projects .project-card {
+        padding: 0.8rem; /* Reduce el padding para más espacio interno */
+    }
+
+    #projects .project-card h3 {
+        font-size: 1.3rem; /* Reduce el tamaño de fuente del título */
+    }
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 550px) {
+    #projects .project-card {
+        padding: 0.8rem; /* Ajusta el padding para pantallas pequeñas */
+    }
+
+    #projects .project-card h3 {
+        font-size: 2rem; /* Reduce el tamaño de fuente aún más si es necesario */
+    }
+}
