@@ -3,6 +3,7 @@ body {
     line-height: 1.6;
     background: linear-gradient(to bottom, #3a3a3a, #242424);
     color: #d8d8d8;
+    overflow-x: hidden;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -265,10 +266,10 @@ body {
 #projects .project-card {
     max-width: 100%; /* Asegura que las tarjetas no excedan el ancho permitido */
     word-wrap: break-word; /* Permite dividir palabras largas */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     max-width: 600px;
     max-height: 650px;
 }
+
 
 /* Estilo del título dentro de la tarjeta */
 #projects .project-card h3 {
@@ -280,7 +281,7 @@ body {
 
 #projects .project-card img {
     max-width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 5px;
 }
 
