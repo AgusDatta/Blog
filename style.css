@@ -132,6 +132,12 @@ body {
     100% { opacity: 1; }
 }
 
+.text-muted {
+    --bs-text-opacity: 1;
+    color: #838485 !important;
+    text-decoration: underline;
+}
+
 .title-container h2 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
@@ -210,6 +216,11 @@ body {
     }
 }
 
+#title-card{
+    font-weight: bold;
+    font-style: italic;
+}
+
 #colored{
     color: #db6a00;
     font-weight: bold;
@@ -220,6 +231,11 @@ body {
     color: white;
     font-weight: bold;
     font-style: normal;
+}
+
+.bg-secondary {
+    --bs-bg-opacity: 1;
+    background-color: rgb(51 30 15) !important;
 }
 
 .experience-card {
@@ -314,14 +330,6 @@ body {
 #projects .title-container h2 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
-}
-
-#projects .underline .line {
-    height: 4px;
-    width: 150px;
-    background-color: #db6a00;
-    margin: 20px;
-    border-radius: 3px;
 }
 
 #projects .underline .dot {
