@@ -235,7 +235,7 @@ body {
 
 .bg-secondary {
     --bs-bg-opacity: 1;
-    background-color: rgb(51 30 15) !important;
+    background-color: rgb(55 55 55) !important;
 }
 
 .experience-card {
